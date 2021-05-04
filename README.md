@@ -1,6 +1,6 @@
 # DDD
 
-Repo for testing out ideas related to Domain Driven Design
+Repo for exploring ideas related to Domain Driven Design
 
 ## Domain that I'm modelling
 
@@ -27,6 +27,9 @@ What processes are a part of the domain?
 What bounded contexts exists in the domain?
 
 - Rights
+- Administratoren
+- Analytics
+- Logging
 - Ticketing
 - Screening
 
