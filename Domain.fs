@@ -75,7 +75,22 @@ module Domain =
         Number: SeatNumber
     }
 
-    type Row = Seat list
+    type RowNumber = private RowNumber of int
+
+    module RowNumber =
+        
+        let create (rowNumber: int) : RowNumber option =
+            if (rowNumber > 0) then
+                Some <| RowNumber rowNumber
+            else
+                None
+
+        let value (RowNumber rowNumber) = rowNumber
+
+    type Row = {
+        RowNumber: RowNumber
+        Seat list
+    }
 
     type CinemaHall = {
         Rows: Row list
