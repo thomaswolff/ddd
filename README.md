@@ -10,28 +10,30 @@ What does the domain consist of?
 
 - Copyright owners
 - Movies
+- Cinemas
 - Cinema halls
 - Screenings
-- Cinemas
-- Cities
 - Customers
 - Tickets
+- Cities
 
 What processes are a part of the domain?
 
 - Acquire rights for movie
+- Register movie
 - Order ticket to screening
 - Register ticket at screening
-- Movie screening
+- Screen movie
 
 What bounded contexts exists in the domain?
 
 - Rights
-- Administratoren
-- Analytics
-- Logging
+- Administration
 - Ticketing
 - Screening
+- Analytics
+  - Can add events to queue
+  - Analytics module can subscrube to these events, and aggregate statistics
 
 How should the bounded contexts be represented by systems?
 
