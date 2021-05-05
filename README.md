@@ -2,9 +2,9 @@
 
 Repo for exploring ideas related to Domain Driven Design
 
-## Domain that I'm modelling
+## The Domain I'm modelling
 
-Movie theaters
+_Movie theaters_
 
 What does the domain consist of?
 
@@ -12,10 +12,10 @@ What does the domain consist of?
 - Movies
 - Cinemas
 - Cinema halls
+- Cities?
 - Screenings
 - Customers
 - Tickets
-- Cities
 
 What processes are a part of the domain?
 
@@ -45,15 +45,15 @@ How should the bounded contexts be represented by systems?
 - "Keep IO at the edges"
   - Why?
     - So that the core of the domain can be pure
-- "Make invalid state unreprecentable"
-  - Why?
-    - Fewer bugs
 - Pure functions in core of application
   - Motivation
     - No side effects
-    - Makes code easier to reason about
     - The code is deterministic
+    - Makes code easier to reason about
     - Easier to test
+- "Make invalid state unreprecentable"
+  - Why?
+    - Fewer bugs
 - Error handling
   - Option
     - Most suited for required/not required?
